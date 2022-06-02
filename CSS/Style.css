@@ -34,6 +34,7 @@ header nav input {
 }
 
 section article{
+    overflow-y: scroll;
     border: 1px solid rebeccapurple;   
     display: flex;
     margin: 0.3cm 0;
@@ -43,6 +44,32 @@ section article{
 section article div{
     display: inline-block;
     font-size: 1cm;
-    margin: auto;
+    margin-left: 0.5cm;
     border: 1px solid black;
+}
+
+.conteine1{
+    display: flex;
+}
+
+.conteine2{
+    display: flex;
+    margin-top: 1cm;
+}
+
+.bloco1{
+    display: inline-block;
+    margin: auto;
+    margin-top: 0.1cm;
+    width: 7cm;    
+    height: 5cm;
+    background-color: rgba(200, 200, 200, 0.274);
+}
+
+@media(max-width: 700px){
+    .bloco1{
+        margin: 5px;
+        width: 5cm;    
+        height: 3cm;
+    }
 }
